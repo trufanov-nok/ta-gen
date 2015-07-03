@@ -138,7 +138,7 @@ inline void displayOutputType( const TA_FuncInfo *funcInfo )
                 type = "TA_Output_Integer";
             else type = "Unknown";
 
-        printf("output param #%d\nparam name: %s\ntype: %s\nflags: %s\n", i, paramInfo->paramName, type.c_str(), printInputFlags(paramInfo->flags).c_str());
+        printf("output param #%d\nparam name: %s\ntype: %s\nflags: %s\n", i, paramInfo->paramName, type.c_str(), printOutputFlags(paramInfo->flags).c_str());
     }
 }
 
