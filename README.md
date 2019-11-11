@@ -2,13 +2,11 @@
 
 Version 0.0.1
 
-A C++ console tool wrapped around [TA-Lib](http://ta-lib.org). Intended to be used from terminal / shell scripts.
+A C++ console tool wrapped around [TA-Lib-RT](https://github.com/trufanov-nok/ta-lib-rt) - fork of [TA-Lib](http://ta-lib.org). Intended to be used from terminal / shell scripts.
 Supposed to be crossplatform: Linux, Windows, Mac OS. License: LGPL v3
 Currently supported features:
-* Listing TA functions implemented in current TA-lib: their groups, details, arguments.
-
-Planned features:   
-* TA signals generation
+* Listing TA functions implemented in current TA-Lib-RT: their groups, details, arguments.
+* Can be easily recompiled to work with original TA-Lib
 
 Command line:
 
