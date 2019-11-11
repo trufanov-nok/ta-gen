@@ -38,8 +38,8 @@ int main(int argc, char *argv[])
             ("version,v", "Get version.")
             ("help,h",    "This help.")
             ("list_groups,g", "List groups of functions available in TA-Lib.")
-            ("list_functions,l", po::value< vector<string> > (), "List functions in the group. May be used multiple times to list content of several groups. Don't forget that group names with space characters must be passed in quotes. May accept 'all' value to list all functions.")
-            ("print_function_details,f", po::value< vector<string> > (), "Print function's' description. May be used multiple times or with 'all' keyword.")
+            ("list_functions,l", po::value< vector<string> > ()->implicit_value(vector<string>({"all"}), ""), "List functions in the group. May be used multiple times to list content of several groups. Don't forget that group names with space characters must be passed in quotes. May accept 'all' value to list all functions.")
+            ("print_function_details,f", po::value< vector<string> > ()->implicit_value(vector<string>({"all"}), ""), "Print function's' description. May be used multiple times or with 'all' keyword.")
             ("xml,x", "Print XML representation of ALL the TA-Lib functions. The returned array is the same as the ta_func_api.xml file.");
     add_options(opts, args, vm);
 
