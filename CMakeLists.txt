@@ -23,4 +23,4 @@ set(ta-gen_SRC
 
 add_executable (ta-gen ${ta-gen_SRC})
 
-target_link_libraries(ta-gen LINK_PUBLIC ta_lib_rt boost_program_options)
+target_link_libraries(ta-gen LINK_PUBLIC ta-lib-rt boost_program_options)

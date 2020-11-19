@@ -3,8 +3,8 @@
 
 #include <vector>
 #include <string>
-#include "ta-lib/ta_libc.h"
-#include "ta-lib/ta_abstract.h"
+#include "ta-lib-rt/ta_libc.h"
+#include "ta-lib-rt/ta_abstract.h"
 
 using namespace std;
 
